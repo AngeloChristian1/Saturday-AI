@@ -1,10 +1,9 @@
-#Cassava Genomic Analysis
 <div id="top"></div>
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
    <a href="#">
-    <img src="https://your-cassava-image-url.png" alt="Logo" width="100" height="100">
+    <img src="[https://your-cassava-image-url.png](https://www.shutterstock.com/image-vector/vector-illustration-cassava-root-manihot-esculenta-2171667857)" alt="Logo" width="100" height="100">
    </a>
 <h3 align="center">Cassava Genomic Analysis</h3>
   <p align="center">
