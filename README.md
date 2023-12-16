@@ -70,12 +70,23 @@ Check for missing values, explore target distribution, and preprocess DNA sequen
 
 - print('Missing values:', train.isnull().sum())
 
-sns.catplot(x="Target", kind="count", data=train)
+- sns.catplot(x="Target", kind="count", data=train)
 
-_Preprocess DNA sequences for training and test data
-_(One-hot encoding)
+## Model Selection and Training:
 
-> > > > > > > 2f49233f82d11668c10a1567c17a5bcb2746d5ce
+Choose a model and train.
+
+- from tensorflow.keras.models import Sequential
+- from tensorflow.keras.layers import Dense, Flatten
+-from tensorflow.keras.optimizers import Adam
+
+- model = Sequential([...])
+- custom_optimizer = Adam(learning_rate=0.00099)
+- model.compile(optimizer=custom_optimizer, loss='binary_crossentropy', metrics=['accuracy'])
+
+- history = model.fit(train_dataset, epochs=25, validation_data=val_dataset)
+
+
 
 ### Features
 
