@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Your Cassava Enhancer Predictor</title>
+</head>
+<body>
+    <h1 class="title">Your Cassava Enhancer Predictor</h1>
+    <form action="/predict" method="post">
+        <label for="sequence" class="label">Enter DNA Sequence:</label>
+        <textarea name="sequence" rows="6" cols="100" class="textarea" required></textarea>
+        <button type="submit" class="button">Predict</button>
+    </form>
+    {% if prediction %}
+        <p class="prediction">Prediction: <span class="answer">{{ prediction }}</span></p>
+        <p class="prediction">Message: <span class="answer">{{ prediction_message }}</span></p>
+    {% endif %}
+</body>
+</html>

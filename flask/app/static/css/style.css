@@ -1,0 +1,59 @@
+*{
+    padding:0px;
+}
+body{
+    background-color:#022B3A;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height:90vh;
+
+}
+
+.title{
+    color:orangered;
+}
+form{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    color:aqua;
+    height:50vh;
+}
+form label{
+    margin:10px ;
+}
+
+button{
+    padding: 10px 20px ;
+    color:black;
+    background-color: aquamarine;
+    border-radius:10px;
+    border:none;
+    
+}
+
+.prediction{
+    text-align:center;
+    font-size:1.5em;
+    color:goldenrod;
+
+}
+.answer{
+    background:white;
+    color:black;
+    padding:4px;
+    font-size: .8em;;
+    border-radius: 5px;
+
+}
+.textarea{
+    padding:15px;
+    border-radius:5px;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
