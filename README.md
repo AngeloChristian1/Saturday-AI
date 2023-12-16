@@ -28,23 +28,23 @@ This project focuses on leveraging the natural resistance of cassava to drought 
 
 #### Technologies
 
-*Python
-*Numpy
-*Pandas
-*Matplotlib
-*Seaborn
-*TensorFlow
-*Third party code
-*InstaDeep’s AgroNT
-*Tools
-*Jupyter Notebooks
-*Google Colab
-*GitHub
+* Python
+* Numpy
+* Pandas
+* Matplotlib
+* Seaborn
+* TensorFlow
+* Third party code
+* InstaDeep’s AgroNT
+* Tools
+* Jupyter Notebooks
+* Google Colab
+* GitHub
 <p align="right">(<a href="#top">back to top</a>)</p>
 <!-- GETTING STARTED -->
-## Setting Up Environment:
+### Setting Up Environment:
 
-Import necessary libraries and mount Google Drive.
+## Import necessary libraries and mount Google Drive.
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -66,13 +66,11 @@ test_embeddings = np.load("/content/drive/MyDrive/Cassava Project/Test_embedding
 
 Check for missing values, explore target distribution, and preprocess DNA sequences.
 
-# Check for missing values
-print('Missing values:', train.isnull().sum())
+* print('Missing values:', train.isnull().sum())
 
-# Explore Target distribution
 sns.catplot(x="Target", kind="count", data=train)
 
-# Preprocess DNA sequences for training and test data
-# (One-hot encoding)
+*Preprocess DNA sequences for training and test data
+*(One-hot encoding)
 
 
